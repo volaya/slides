@@ -1,0 +1,294 @@
+\documentclass[xcolor=pdftex,dvipsnames,table]{beamer}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}  
+\usetheme{Madrid}
+\title
+[Fundamentos análisis]{Algunas ideas fundamentales sobre análisis espacial}
+\author{}
+\date{}
+\AtBeginSection{
+\begin{frame}
+  \centering
+    \begin{beamercolorbox}[sep=8pt,center]{section title}
+      \usebeamerfont{section title}\insertsection\par
+    \end{beamercolorbox}
+\end{frame}    
+}
+% outline 
+\begin{document}
+\setbeamercovered{dynamic}
+\setlength{\arrayrulewidth}{1.2pt}
+
+\frame{\titlepage}
+
+\begin{frame}
+    \frametitle{Problemas frecuentes en análisis de datos espaciales}
+    \begin{itemize}
+  \item Desconocimiento de la formulación adecuada al problema.
+  \pause
+  \item Comprensión deficiente de los fundamentos de una formulación a emplear.
+  \pause
+  \item Presentación inadecuada de resultados.
+  \end{itemize}
+\end{frame}
+
+\section{Conocer las posibilidades existentes}
+
+\begin{frame}
+\frametitle{Razonamiento espacial}
+\begin{itemize}
+\item Razonamiento para la solución de problemas espaciales.
+\pause
+\item Debe desarrollarse.
+\pause
+\item Planteamiento del problema y elaboración de soluciones.
+\pause
+\item Uso de técnicas del ámbito no espacial.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Datos espaciales}
+\begin{itemize}
+\item ¿Qué tienen de especial los datos espaciales?	
+\pause
+\item Algunas ideas básicas:
+\begin{itemize}
+	\item Escala
+	\item Efectos de borde
+	\item Problema de la Unidad de Área Modificable
+	\item Autocorrelación espacial
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Algunos conocimientos básicos}
+\begin{itemize}
+	\item Estadística espacial.
+	\pause
+	\item Álgebra de mapas (para capas raster).
+\begin{itemize}
+	\item Operaciones locales/focales/zonales/globales.
+\end{itemize}
+	\pause
+\item Operaciones geométricas y de superposición (para capas vectoriales).
+\pause
+\item Bases de datos (para atributos de capas vectoriales).
+\begin{itemize}
+	\item Lenguajes de consulta (espacial).
+\end{itemize}
+\end{itemize}
+
+\end{frame}
+
+\section{Comprender los procesos empleados}
+
+\begin{frame}
+\frametitle{Uso incorrecto de algoritmos}
+\begin{itemize}
+\item Un ejemplo: Kriging
+\pause
+\begin{itemize}
+\item Formulación compleja.
+\pause
+\item Formulación atractiva.
+\pause
+\item Resultados llamativos y aparentes.
+\pause
+\item Fácil de aplicar.
+\pause
+\item Muy frecuentemente malentendida o aplicada sin rigor.
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\includegraphics[height=8cm]{ArcGIS.png}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\includegraphics[height=9cm]{kriging3d.png}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\includegraphics[height=9cm]{jerte.png}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\includegraphics[height=9cm]{kriging3d.png}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\includegraphics[height=8cm]{relieve.png}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\includegraphics[height=4cm]{kriging.png}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\includegraphics[height=3cm]{matricula.png}
+\end{center}
+\end{frame}
+
+
+\begin{frame}
+\begin{center}
+\includegraphics[height=3cm]{interpolacion.png}
+\end{center}
+\end{frame}
+
+
+\section{Presentar adecuadamente los resultados}
+
+\begin{frame}
+\frametitle{Datos \emph{vs} Información}
+\begin{itemize}
+\item 26/07/1979
+\item 07/26/1979
+\item 26 de julio de 1979
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{¿Información?}
+\begin{center}
+\rowcolors{1}{RoyalBlue!20}{RoyalBlue!5}
+\begin{tabular}{|l|c|c|}\hline
+Wang Yung Ching &	F	& 25\\
+Chen kun	& M	& 35 \\
+Fae Wong 	& F	& 42 \\
+.&&\\ 
+.&&\\
+.&&\\
+\hline
+\end{tabular}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Información}
+\begin{center}
+\includegraphics[height=4cm]{piramide.png}
+\end{center}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{¡Información!}
+\begin{itemize}
+\item Más hombres que mujeres, especialmente en edades jóvenes
+\item Reducción brusca de la natalidad a partir de los años 60
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Transmisión de la información}
+\begin{itemize}
+\item El análisis espacial obtiene nuevos datos a partir de datos espaciales ya existentes, y debe transmitirse la información que estos encierran.
+\item Hay muchos tipos de información, muchas formas de extraerla y muchas formas distintas de transmitirla.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{El mapa como transmisor de información espacial}
+\begin{itemize}
+\item Un mapa no es siempre la mejor forma de transmitir una información con componente espacial.
+\pause	
+\item Un mapa es en sí un herramienta para el análisis espacial.
+\pause	
+\item El análisis espacial puede emplearse para mejorar un mapa (curvas de nivel, modelos de iluminación...).
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\includegraphics[height=5cm]{mapa_flujo.png}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\includegraphics[height=8cm]{john_snow.png}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Información errónea o sesgada}
+\begin{center}
+\includegraphics[height=7cm]{voto.png}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Hacer un mapa no es fácil}
+\begin{center}
+\includegraphics[height=6cm]{mercator.png}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Hacer un mapa no es fácil}
+\begin{center}
+\includegraphics[height=5cm]{mapa.png}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Hacer un mapa no es fácil}
+\begin{center}
+\includegraphics[height=5cm]{mapa2.png}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Hacer un mapa no es fácil}
+\begin{center}
+\includegraphics[height=5cm]{mapa3.png}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Considerar la utilidad del mapa}
+\begin{itemize}
+	\item "Todo mapa debe tener una escala y una flecha de Norte" (¿?).
+\end{itemize}
+\begin{center}
+\includegraphics[height=4cm]{leyenda_norte.png}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Mejora de un mapa mediante el análisis espacial}
+\begin{center}
+\includegraphics[height=6cm]{dem_mejorado.png}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Resumen}
+\begin{itemize}
+	\item Conocer las posibilidades existentes.
+	\item Comprender los procesos empleados.
+	\item Presentar adecuadamente los resultados.
+\end{itemize}
+\end{frame}
+
+
+
+\end{document}

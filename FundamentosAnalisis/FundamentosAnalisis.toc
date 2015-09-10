@@ -1,0 +1,4 @@
+\beamer@endinputifotherversion {3.20pt}
+\beamer@sectionintoc {1}{Conocer las posibilidades existentes}{5}{0}{1}
+\beamer@sectionintoc {2}{Comprender los procesos empleados}{16}{0}{2}
+\beamer@sectionintoc {3}{Presentar adecuadamente los resultados}{31}{0}{3}
