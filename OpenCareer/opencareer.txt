@@ -1,0 +1,80 @@
+The open source style approach to building your GIS career
+
+Víctor Olaya
+
+Software engineer
+Working at Boundless
+QGIS Core committer
+About me
+
+
+
+What if I am a GIS professional?
+
+“Open” is not altruism
+
+Many benefits, including more visibility
+
+It changes the way you understand your own work
+
+SAGA ( Gentle introduction to SAGA GIS + modules)
+Geomorphometry book
+Free GIS book
+SEXTANTE
+QGIS Processing Framework
+My story
+
+CV?
+
+Portfolio!
+
+
+Social portfolio
+
+Some advice
+
+Expose your work
+
+Open your source code
+Submit patches to a project
+Publish scripts
+Write about it
+Be active in a dev platform (GitHub/Bitbucket)
+Participate in forums/Mailing Lists (StackOverflow)
+You are a developer	
+
+Share your results.
+Write about the methods you use or the software you use.
+Participate in forums and mailing lists, helping others to use the software or asking questions you might have. Show what you know and also what you do not know.
+Join a local GIS group and make a presentation. Put your slides online.
+You are a GIS Analyst
+
+Other
+Publish your maps
+Start a blog about GIS
+Write documentation for a GIS software
+Translate documentation
+Make a podcast/screencast
+Participate in OSM or similar projects
+Write, write, write
+
+
+GIS is trendy. 
+Open Source as well.
+Beware of that.
+
+
+
+
+
+
+Do not reinvent the wheel. But try to rethink it.
+
+
+3.Know the world
+
+volaya@boundlessgeo.com
+@volayaf
+http://volaya.es
+
+Thanks!
