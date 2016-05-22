@@ -2,7 +2,7 @@
 - Installing plugins with additional providers
 - Setting default styles for algorithms
 - Creating a pre-execution hook for additional logging
-- Creating a post-execution hook for safely storing temporary data
+- Creating a post-execution hook for flexible styling. (or safely storing temporary data)
 - Setting processing algorithms as independent menus and buttons
 - Creating a preconfigured algorithm
 - Setting a preconfigured algorithm as a button for inmediate execution
