@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Creating better GIS professionals</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style type="text/css">
+      body {
+        font-family: 'Yanone Kaffeesatz';
+      }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: 400;
+        margin-bottom: 0;
+      }
+      .remark-slide-content h1 { font-size: 3em; }
+      .remark-slide-content h2 { font-size: 2em; }
+      .remark-slide-content h3 { font-size: 1.6em; }
+      .footnote {
+        position: absolute;
+        bottom: 3em;
+      }
+      .pull-left {
+        float: left;
+        width: 47%;
+      }
+      .pull-right {
+        float: right;
+        width: 47%;
+      }
+      .pull-right ~ p {
+        clear: both;
+      }
+      #slideshow .slide .content code {
+        font-size: 0.8em;
+      }
+      #slideshow .slide .content pre code {
+        font-size: 0.9em;
+        padding: 15px;
+      }
+      .inverse {
+        background: #272822;
+        color: #777872;
+        text-shadow: 0 0 20px #333;
+      }
+      .inverse h1, .inverse h2{
+        color: #f3f3f3;
+        line-height: 0.8em;
+      }
+
+      /* Slide-specific styling */
+      #slide-inverse .footnote {
+        bottom: 12px;
+        left: 20px;
+      }
+      #slide-how .slides {
+        font-size: 0.9em;
+        position: absolute;
+        top:  151px;
+        right: 140px;
+      }
+      #slide-how .slides h3 {
+        margin-top: 0.2em;
+      }
+      #slide-how .slides .first, #slide-how .slides .second {
+        padding: 1px 20px;
+        height: 90px;
+        width: 120px;
+        -moz-box-shadow: 0 0 10px #777;
+        -webkit-box-shadow: 0 0 10px #777;
+        box-shadow: 0 0 10px #777;
+      }
+      #slide-how .slides .first {
+        background: #fff;
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        z-index: 1;
+      }
+      #slide-how .slides .second {
+        position: relative;
+        background: #fff;
+        z-index: 0;
+      }
+
+      /* Two-column layout */
+      .left-column {
+        color: #777;
+        width: 20%;
+        height: 92%;
+        float: left;
+      }
+        .left-column h2:last-of-type, .left-column h3:last-child {
+          color: #000;
+        }
+      .right-column {
+        width: 75%;
+        float: right;
+        padding-top: 0em;
+        font-size:1.5em;
+      }
+      .right-column li { padding-bottom: 1.5em; }
+            
+      .right-column img{
+          display: block;
+          margin: auto; 
+          padding-top: 1em;         
+      }
+    </style>
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle, inverse
+
+# Creating better GIS professionals
+
+Víctor Olaya 
+
+---
+class: center, middle
+<img src="./toolbox.png" width="50%"/>
+
+---
+class: center, middle
+<img src="./libro_peso.jpg" width="50%"/>
+
+---
+class: center, middle
+# "Your software is awesome, but it's useless without data"
+
+-Schuyler Erle-
+---
+
+class: center, middle
+<img src="./david-and-goliath.jpg" width="100%"/>
+
+---
+
+class: center, middle
+<img src="./sling.jpg" width="100%"/>
+
+---
+
+class: center, middle
+<img src="./stones.jpg" width="100%"/>
+
+---
+
+class: center, middle
+<img src="./aim.jpg" width="100%"/>
+
+---
+class: center, middle
+
+#"Your software and data are awesome, but they are useless without knowledge"
+
+---
+class: center, middle
+
+# Let's make software less easy to use
+
+---
+class: center, middle
+# Easiness is not a substitute for knowledge
+
+---
+
+class: center, middle
+
+# "Programming today is a race between software engineers striving to build bigger and better idiot-proof programs, and the Universe trying to produce bigger and better idiots. So far, the Universe is winning."
+
+-Rick Cook-
+
+---
+class: center, middle
+
+# ¿User friendly?
+---
+
+class: center, middle
+# The goal is not to create a software that satisfies the user.
+
+# (Do not make the user develop false beliefs)
+
+---
+class: center, middle
+# The goal is to create a software that generates satisfying results.
+---
+class: center, middle
+
+# I don't care about happy users. I care about sound results.
+
+---
+class: center, middle
+<img src="./wizard.png" width="100%"/>
+
+---
+class: center, middle
+
+# UI/UX
+---
+class: center, middle
+<img src="./boton.jpg" width="100%"/>
+
+---
+class: center, middle
+<img src="./bomba.jpg" width="100%"/>
+---
+class: center, middle
+# "Your software and your data are awesome, but they are dangerous without knowledge"
+---
+class: center, middle
+
+# "The three most dangerous things in the world are a programmer with a soldering iron, a hardware type with a program patch and a user with an idea."
+
+-Rick Cook-
+
+---
+class: center, middle
+# The client is not always right
+
+---
+
+class: center, middle
+# Let's write less documentation
+
+---
+
+class: center, middle
+# Documentation explains the software.
+
+---
+
+# Slope algorithm
+## Inputs:
+### Elevation: Values must be in the same units as the layer cellsize. Cells are assumed to be square (N-S cellsize is the same as E-W cellsize)
+## Outputs:
+### Slope: In degrees
+---
+
+# Kriging algorithm
+## Inputs:
+### Input points: ???
+### Layer field to use: ???
+### Range: ???
+### Nugget: ???
+### Sill: ???
+
+---
+class: center, middle
+<img src="./kriginghelp.png" width="100%"/>
+
+---
+class: center, middle
+<img src="./geostats.jpg" height="100%"/>
+
+---
+class: center, middle
+# Let's not help so much in mailing lists/forums.
+
+---
+class: center, middle
+# Software mailing lists/forums are about software.
+
+---
+class: center, middle
+# Beware of gamification.
+
+---
+class: center, middle
+# Users <i>vs</i> Professionals
+
+---
+
+class: center, middle
+# Me <i>vs</i> The others
+
+---
+
+class: center, middle, inverse
+
+# Thanks!
+## Víctor Olaya
+## volayaf@gmail.com
+  
+    </textarea>
+    <script src="./remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
